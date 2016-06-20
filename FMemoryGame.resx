@@ -122,15 +122,207 @@
     <value>4</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pb_05.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="pb_14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pb_14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 285</value>
+  </data>
+  <data name="pb_14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 88</value>
+  </data>
+  <data name="pb_14.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;pb_14.Name" xml:space="preserve">
+    <value>pb_14</value>
+  </data>
+  <data name="&gt;&gt;pb_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_14.Parent" xml:space="preserve">
+    <value>tlpTapisDeCartes</value>
+  </data>
+  <data name="&gt;&gt;pb_14.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pb_15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pb_15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 285</value>
+  </data>
+  <data name="pb_15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 88</value>
+  </data>
+  <data name="pb_15.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;pb_15.Name" xml:space="preserve">
+    <value>pb_15</value>
+  </data>
+  <data name="&gt;&gt;pb_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_15.Parent" xml:space="preserve">
+    <value>tlpTapisDeCartes</value>
+  </data>
+  <data name="&gt;&gt;pb_15.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pb_16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pb_16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 285</value>
+  </data>
+  <data name="pb_16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 88</value>
+  </data>
+  <data name="pb_16.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pb_16.Name" xml:space="preserve">
+    <value>pb_16</value>
+  </data>
+  <data name="&gt;&gt;pb_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_16.Parent" xml:space="preserve">
+    <value>tlpTapisDeCartes</value>
+  </data>
+  <data name="&gt;&gt;pb_16.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pb_10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pb_10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 191</value>
+  </data>
+  <data name="pb_10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 88</value>
+  </data>
+  <data name="pb_10.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;pb_10.Name" xml:space="preserve">
+    <value>pb_10</value>
+  </data>
+  <data name="&gt;&gt;pb_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_10.Parent" xml:space="preserve">
+    <value>tlpTapisDeCartes</value>
+  </data>
+  <data name="&gt;&gt;pb_10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pb_09.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pb_09.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 191</value>
+  </data>
+  <data name="pb_09.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 88</value>
+  </data>
+  <data name="pb_09.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;pb_09.Name" xml:space="preserve">
+    <value>pb_09</value>
+  </data>
+  <data name="&gt;&gt;pb_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_09.Parent" xml:space="preserve">
+    <value>tlpTapisDeCartes</value>
+  </data>
+  <data name="&gt;&gt;pb_09.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pb_11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pb_11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 191</value>
+  </data>
+  <data name="pb_11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 88</value>
+  </data>
+  <data name="pb_11.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pb_11.Name" xml:space="preserve">
+    <value>pb_11</value>
+  </data>
+  <data name="&gt;&gt;pb_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_11.Parent" xml:space="preserve">
+    <value>tlpTapisDeCartes</value>
+  </data>
+  <data name="&gt;&gt;pb_11.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pb_13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pb_13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 285</value>
+  </data>
+  <data name="pb_13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 88</value>
+  </data>
+  <data name="pb_13.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pb_13.Name" xml:space="preserve">
+    <value>pb_13</value>
+  </data>
+  <data name="&gt;&gt;pb_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_13.Parent" xml:space="preserve">
+    <value>tlpTapisDeCartes</value>
+  </data>
+  <data name="&gt;&gt;pb_13.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pb_12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pb_12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 191</value>
+  </data>
+  <data name="pb_12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 88</value>
+  </data>
+  <data name="pb_12.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pb_12.Name" xml:space="preserve">
+    <value>pb_12</value>
+  </data>
+  <data name="&gt;&gt;pb_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_12.Parent" xml:space="preserve">
+    <value>tlpTapisDeCartes</value>
+  </data>
+  <data name="&gt;&gt;pb_12.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pb_05.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="pb_05.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 113</value>
+    <value>103, 97</value>
   </data>
   <data name="pb_05.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 100</value>
+    <value>94, 88</value>
   </data>
   <data name="pb_05.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -145,16 +337,16 @@
     <value>tlpTapisDeCartes</value>
   </data>
   <data name="&gt;&gt;pb_05.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>8</value>
   </data>
   <data name="pb_06.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pb_06.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 113</value>
+    <value>3, 97</value>
   </data>
   <data name="pb_06.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 100</value>
+    <value>94, 88</value>
   </data>
   <data name="pb_06.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -169,16 +361,16 @@
     <value>tlpTapisDeCartes</value>
   </data>
   <data name="&gt;&gt;pb_06.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>9</value>
   </data>
   <data name="pb_07.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pb_07.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 113</value>
+    <value>303, 97</value>
   </data>
   <data name="pb_07.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 100</value>
+    <value>94, 88</value>
   </data>
   <data name="pb_07.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -193,16 +385,16 @@
     <value>tlpTapisDeCartes</value>
   </data>
   <data name="&gt;&gt;pb_07.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>10</value>
   </data>
   <data name="pb_08.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pb_08.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 113</value>
+    <value>203, 97</value>
   </data>
   <data name="pb_08.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 100</value>
+    <value>94, 88</value>
   </data>
   <data name="pb_08.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -217,7 +409,7 @@
     <value>tlpTapisDeCartes</value>
   </data>
   <data name="&gt;&gt;pb_08.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>11</value>
   </data>
   <data name="pb_01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -226,7 +418,7 @@
     <value>3, 3</value>
   </data>
   <data name="pb_01.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 100</value>
+    <value>94, 88</value>
   </data>
   <data name="pb_01.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -241,7 +433,7 @@
     <value>tlpTapisDeCartes</value>
   </data>
   <data name="&gt;&gt;pb_01.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>12</value>
   </data>
   <data name="pb_02.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -250,7 +442,7 @@
     <value>103, 3</value>
   </data>
   <data name="pb_02.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 100</value>
+    <value>94, 88</value>
   </data>
   <data name="pb_02.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -265,7 +457,7 @@
     <value>tlpTapisDeCartes</value>
   </data>
   <data name="&gt;&gt;pb_02.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>13</value>
   </data>
   <data name="pb_04.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -274,7 +466,7 @@
     <value>303, 3</value>
   </data>
   <data name="pb_04.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 100</value>
+    <value>94, 88</value>
   </data>
   <data name="pb_04.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -289,7 +481,7 @@
     <value>tlpTapisDeCartes</value>
   </data>
   <data name="&gt;&gt;pb_04.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>14</value>
   </data>
   <data name="pb_03.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -298,7 +490,7 @@
     <value>203, 3</value>
   </data>
   <data name="pb_03.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 100</value>
+    <value>94, 88</value>
   </data>
   <data name="pb_03.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -313,16 +505,16 @@
     <value>tlpTapisDeCartes</value>
   </data>
   <data name="&gt;&gt;pb_03.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>15</value>
   </data>
   <data name="tlpTapisDeCartes.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 34</value>
   </data>
   <data name="tlpTapisDeCartes.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="tlpTapisDeCartes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 220</value>
+    <value>400, 379</value>
   </data>
   <data name="tlpTapisDeCartes.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -337,13 +529,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tlpTapisDeCartes.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="tlpTapisDeCartes.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pb_05" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_06" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_07" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_08" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_01" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_02" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pb_04" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="pb_03" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,50,Percent,50,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pb_14" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_15" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_16" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_10" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_09" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_11" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_13" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_12" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_05" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_06" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_07" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_08" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_01" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pb_02" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pb_04" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="pb_03" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="btn_distribuer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 376</value>
+    <value>559, 376</value>
   </data>
   <data name="btn_distribuer.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
@@ -364,7 +556,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_distribuer.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <metadata name="ilSabotDeCartes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -374,7 +566,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAA8
-        exkAAk1TRnQBSQFMAgEBKgEAAYABAAGAAQABZAEAAWQBAAT/AREBAAj/AUIBTQE2BwABNgMAASgDAAGQ
+        exkAAk1TRnQBSQFMAgEBKgEAAZABAAGQAQABZAEAAWQBAAT/AREBAAj/AUIBTQE2BwABNgMAASgDAAGQ
         AQECAAFMAQQCAAEBAQABEAUAAYABbQENEQAB/wF3AfIBNQFuASEBbgEhAW8BIQFvASEBTwEhAU8BIQFv
         ASEBbwEdAW8BHQFvAR0BbwEdAW8BHQFvAR0BbwEdAW8BHQFvAR0BbwEdAW8BHQFvAR0BbwEdAW8BHQFv
         AR0BbwEdAW8BHQFvAR0BbwEdAW8BHQFvAR0BbwEdAW8BHQFvAR0BbwEdAW8BHQFvAR0BbwEdAW8BHQFv
@@ -28210,7 +28402,7 @@
 </value>
   </data>
   <data name="btn_retourner.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 375</value>
+    <value>678, 375</value>
   </data>
   <data name="btn_retourner.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 38</value>
@@ -28231,31 +28423,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_retourner.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pb_recherche.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 266</value>
-  </data>
-  <data name="pb_recherche.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 103</value>
-  </data>
-  <data name="pb_recherche.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pb_recherche.Name" xml:space="preserve">
-    <value>pb_recherche</value>
-  </data>
-  <data name="&gt;&gt;pb_recherche.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pb_recherche.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pb_recherche.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="btn_jouer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 376</value>
+    <value>857, 376</value>
   </data>
   <data name="btn_jouer.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
@@ -28285,7 +28456,7 @@
     <value>Jing Jing, 16.2pt</value>
   </data>
   <data name="label_timer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 183</value>
+    <value>655, 183</value>
   </data>
   <data name="label_timer.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 37</value>
@@ -28312,7 +28483,7 @@
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="label_règles1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>581, 53</value>
+    <value>664, 53</value>
   </data>
   <data name="label_règles1.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 18</value>
@@ -28339,7 +28510,7 @@
     <value>True</value>
   </data>
   <data name="label_règles2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>606, 81</value>
+    <value>689, 81</value>
   </data>
   <data name="label_règles2.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 17</value>
@@ -28366,7 +28537,7 @@
     <value>True</value>
   </data>
   <data name="label_règles3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>606, 98</value>
+    <value>689, 98</value>
   </data>
   <data name="label_règles3.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 17</value>
@@ -28396,7 +28567,7 @@
     <value>Jing Jing, 10.8pt</value>
   </data>
   <data name="label_points.Location" type="System.Drawing.Point, System.Drawing">
-    <value>554, 266</value>
+    <value>659, 266</value>
   </data>
   <data name="label_points.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 25</value>

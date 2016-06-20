@@ -25,21 +25,17 @@ namespace Memory
         private GameEngine g;
 
         /* Déclaration des variables globales du jeu */
-
         static int NB_CARTES_SABOT;
         static int NB_CARTES_TAPIS;
         int[] tImagesCartes; // Tableau comprenant les indices des cartes sur le tapis
-        int[] tSuiteRecherche; // Tableau comprenant l'ordre des cartes à trouver
 
         static int TIMER = 40; // Durée du timer
-        int nbPoints;
-        bool partieDémarrée = false;
-        int carteCourante;
-        int indiceCarteATrouver = 1;
+        int nbPoints, carteCourante, nbCartesRetournées = 0, finJeu = 0;
+        bool partieDémarrée = false, arrêtTimer = false;
+        int indiceCarteATrouver = 1; // a supprimer
 
         static System.Windows.Forms.Timer monTimer = new System.Windows.Forms.Timer();
         static Stopwatch chronomètre = new Stopwatch();
-        static bool arrêtTimer = false;
 
 
         /* Méthode affichant le temps restant toutes les secondes */
@@ -49,7 +45,7 @@ namespace Memory
             long secondes_restantes = TIMER - (chronomètre.ElapsedMilliseconds / 1000);
             // Puis on met à jour le label
             String temps = secondes_restantes.ToString();
-            temps += " seconde(s) restante(s)";
+            temps += " s restante(s)";
             label_timer.Text = temps;
             label_timer.Update();
         }
@@ -97,22 +93,44 @@ namespace Memory
             }
         }
 
-        /* Méthode distribuant 8 cartes aléatoires parmi les cartes disponibles */
+        /* Méthode distribuant 16 cartes aléatoires parmi les cartes disponibles */
         private void Distribution_Aleatoire()
         {
+            PictureBox carte;
+            int i_image, i_carte = 0, i_tapis = 0;
             // On utilise la LotoMachine pour générer une série aléatoire            
             LotoMachine hasard = new LotoMachine(NB_CARTES_SABOT);
-            // On veut une série de nbCartesSurTapis cartes parmi celles du réservoir
-            tImagesCartes = hasard.TirageAleatoire(NB_CARTES_TAPIS, false);
+
+            // On veut une série de nbCartesSurTapis/2 (pour constituer les paires) cartes parmi celles du réservoir
+            tImagesCartes = hasard.TirageAleatoire(NB_CARTES_TAPIS/2, false);
             // Affectation des images aux picturebox
-            PictureBox carte;
-            int i_image;
-            for (int i_carte = 0; i_carte < NB_CARTES_TAPIS; i_carte++)
+            
+            // Position aléatoire des cartes
+            LotoMachine hasard2 = new LotoMachine(NB_CARTES_TAPIS-1);
+            int[] indiceTapis = hasard2.TirageAleatoire(NB_CARTES_TAPIS-1, false);
+            
+            // On disperse la première moitié des cartes aléatoirement dans le jeu
+            while (i_tapis < indiceTapis.Length/2)
             {
-                carte = (PictureBox)tlpTapisDeCartes.Controls[i_carte];
+                carte = (PictureBox)tlpTapisDeCartes.Controls[indiceTapis[i_tapis]];
                 i_image = tImagesCartes[i_carte + 1]; // i_carte + 1 à cause des pbs d'indices
                 carte.Image = ilSabotDeCartes.Images[i_image];
                 carte.Tag = i_carte + 1;
+                i_tapis++;
+                i_carte++;
+            }
+
+            i_carte = 0;
+
+            // Puis on remplit le reste du tapis avec les paires manquantes
+            while (i_tapis < indiceTapis.Length) 
+            {
+                carte = (PictureBox)tlpTapisDeCartes.Controls[indiceTapis[i_tapis]];
+                i_image = tImagesCartes[i_carte + 1]; // i_carte + 1 à cause des pbs d'indices
+                carte.Image = ilSabotDeCartes.Images[i_image];
+                carte.Tag = i_carte + 1;
+                i_tapis++;
+                i_carte++;
             }
         }
 
@@ -121,7 +139,7 @@ namespace Memory
         private void finPartie(Object myObject, EventArgs myEventArgs)
         {
             // On met à jour le label indiquant le nombre de secondes restantes
-            label_timer.Text = "0 seconde(s) restante(s)";
+            label_timer.Text = "0 s restante(s)";
             label_timer.Update();
             // On arrête le timer et la stopwatch
             chronomètre.Stop();
@@ -179,27 +197,13 @@ namespace Memory
         /* Méthode démarrant la partie */
         private void lancerPartie(object sender, EventArgs e)
         {
-            partieDémarrée = true;
-            suiteRecherche();
-            // On va montrer la carte à rechercher
-            montrerCarte(tSuiteRecherche[indiceCarteATrouver]);
-            démarrerTimer();
             // On va masquer le bouton retourner et le bouton jouer
             btn_retourner.Enabled = false;
             btn_jouer.Enabled = false;
+            partieDémarrée = true;
+            démarrerTimer();
         }
-
-
-        /* Méthode qui va récupérer les cartes à trouver au fur et à mesure du jeu */
-        private void montrerCarte(int carteaTrouver)
-        {
-            // On va chercher le le numéro de la carte correspondante            
-            carteCourante = tImagesCartes[carteaTrouver];
-            // Et on affiche la carte à trouver dans le sabot
-            pb_recherche.Image = ilSabotDeCartes.Images[carteCourante];
-        }
-
-
+        
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -218,15 +222,14 @@ namespace Memory
                 }               
             }
             btn_retourner.Enabled = false;
-            btn_jouer.Enabled = true;
-        }
-
-        /* Méthode qui va créer une suite de cartes à rechercher parmi les cartes sur le tapis */
-        private void suiteRecherche()
-        {
-            // On va générer un indice aléatoire pour récupérer une des 8 cartes au hasard
-            LotoMachine hasard = new LotoMachine(8);
-            tSuiteRecherche = hasard.TirageAleatoire(8, false);
+            if (!partieDémarrée)
+            {
+                btn_jouer.Enabled = true;
+            }
+            else
+            {
+                btn_jouer.Enabled = false;
+            }
         }
 
 
@@ -234,7 +237,6 @@ namespace Memory
         {
 
         }
-
 
         /* Méthode vérifiant si la carte sélectionnée est celle qu'il faut trouver */
         private void verifierCarte(object sender, EventArgs e)
@@ -252,42 +254,48 @@ namespace Memory
                 i_image = tImagesCartes[i_carte];
                 carte.Image = ilSabotDeCartes.Images[i_image];
 
-                if (i_image == carteCourante)
+                if (nbCartesRetournées == 0)
                 {
-                    // Le joueur a trouvé la bonne carte : on va mettre à jour son score
-                    nbPoints += 10;
-                    label_points.Text = "Nombre de points : " + nbPoints;
-                    label_points.Update();
-                    indiceCarteATrouver++;
-                    // Si on a pas trouvé toutes les cartes, on continue la partie
-                    if (indiceCarteATrouver < 9)
+                    carteCourante = i_image;
+                    nbCartesRetournées++;
+                    finJeu ++;
+                }
+                else if (nbCartesRetournées == 1)
+                {
+                    nbCartesRetournées = 0;
+                    if (i_image == carteCourante)
                     {
-                        montrerCarte(tSuiteRecherche[indiceCarteATrouver]);
-                        démarrerTimer();
+                        // Le joueur a trouvé la bonne carte : on va mettre à jour son score
+                        nbPoints += 10;
+                        label_points.Text = "Nombre de points : " + nbPoints;
+                        label_points.Update();
+                        finJeu++;
+                        // Si on a pas retourné toutes les cartes, on continue la partie
+                        if (finJeu == NB_CARTES_TAPIS)
+                        {
+                            MessageBox.Show("Vous avez gagné la partie ! Bravo !");
+                            arrêtTimer = true;
+                            chronomètre.Stop();
+                            monTimer.Stop();
+                            Application.Exit();                        }
+                        else
+                        {
+                            démarrerTimer();                         
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Vous avez gagné la partie ! Bravo !");
-                        arrêtTimer = true;
-                        chronomètre.Stop();
-                        monTimer.Stop();
-                        Application.Exit();
+                        // Le joueur s'est trompé de carte : on va diminuer son nb de points
+                        nbPoints -= 2;
+                        label_points.Text = "Nombre de points : " + nbPoints;
+                        label_points.Update();
+                        MessageBox.Show("Dommage ! Essayez encore (et encore, et encore) !");
+                        finJeu = 0;
+                        retournerCartes();
+                        // indiceCarteATrouver = 1;
+                        démarrerTimer();
                     }
-                }
-                else
-                {
-                    // Le joueur s'est trompé de carte : on va diminuer son nb de points
-                    nbPoints -= 2;
-                    label_points.Text = "Nombre de points : " + nbPoints;
-                    label_points.Update();
-                    MessageBox.Show("Dommage ! Essayez encore (et encore, et encore) !");
-                    retournerCartes();
-                    // Il faut regénérer une nouvelle suite pour les cartes à trouver
-                    suiteRecherche();
-                    indiceCarteATrouver = 1;
-                    montrerCarte(tSuiteRecherche[indiceCarteATrouver]);
-                    démarrerTimer();
-                }
+                }              
             }
             else
             {

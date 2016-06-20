@@ -39,6 +39,14 @@ namespace Memory
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMemoryGame));
             this.tlpTapisDeCartes = new System.Windows.Forms.TableLayoutPanel();
+            this.pb_14 = new System.Windows.Forms.PictureBox();
+            this.pb_15 = new System.Windows.Forms.PictureBox();
+            this.pb_16 = new System.Windows.Forms.PictureBox();
+            this.pb_10 = new System.Windows.Forms.PictureBox();
+            this.pb_09 = new System.Windows.Forms.PictureBox();
+            this.pb_11 = new System.Windows.Forms.PictureBox();
+            this.pb_13 = new System.Windows.Forms.PictureBox();
+            this.pb_12 = new System.Windows.Forms.PictureBox();
             this.pb_05 = new System.Windows.Forms.PictureBox();
             this.pb_06 = new System.Windows.Forms.PictureBox();
             this.pb_07 = new System.Windows.Forms.PictureBox();
@@ -50,7 +58,6 @@ namespace Memory
             this.btn_distribuer = new System.Windows.Forms.Button();
             this.ilSabotDeCartes = new System.Windows.Forms.ImageList(this.components);
             this.btn_retourner = new System.Windows.Forms.Button();
-            this.pb_recherche = new System.Windows.Forms.PictureBox();
             this.btn_jouer = new System.Windows.Forms.Button();
             this.label_timer = new System.Windows.Forms.Label();
             this.label_règles1 = new System.Windows.Forms.Label();
@@ -58,6 +65,14 @@ namespace Memory
             this.label_règles3 = new System.Windows.Forms.Label();
             this.label_points = new System.Windows.Forms.Label();
             this.tlpTapisDeCartes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_09)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_05)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_06)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_07)).BeginInit();
@@ -66,12 +81,19 @@ namespace Memory
             ((System.ComponentModel.ISupportInitialize)(this.pb_02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_04)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_recherche)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpTapisDeCartes
             // 
             resources.ApplyResources(this.tlpTapisDeCartes, "tlpTapisDeCartes");
+            this.tlpTapisDeCartes.Controls.Add(this.pb_14, 0, 3);
+            this.tlpTapisDeCartes.Controls.Add(this.pb_15, 0, 3);
+            this.tlpTapisDeCartes.Controls.Add(this.pb_16, 0, 3);
+            this.tlpTapisDeCartes.Controls.Add(this.pb_10, 0, 2);
+            this.tlpTapisDeCartes.Controls.Add(this.pb_09, 0, 2);
+            this.tlpTapisDeCartes.Controls.Add(this.pb_11, 0, 2);
+            this.tlpTapisDeCartes.Controls.Add(this.pb_13, 0, 2);
+            this.tlpTapisDeCartes.Controls.Add(this.pb_12, 0, 2);
             this.tlpTapisDeCartes.Controls.Add(this.pb_05, 0, 1);
             this.tlpTapisDeCartes.Controls.Add(this.pb_06, 0, 1);
             this.tlpTapisDeCartes.Controls.Add(this.pb_07, 0, 1);
@@ -82,6 +104,62 @@ namespace Memory
             this.tlpTapisDeCartes.Controls.Add(this.pb_03, 2, 0);
             this.tlpTapisDeCartes.Name = "tlpTapisDeCartes";
             this.tlpTapisDeCartes.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // pb_14
+            // 
+            resources.ApplyResources(this.pb_14, "pb_14");
+            this.pb_14.Name = "pb_14";
+            this.pb_14.TabStop = false;
+            this.pb_14.Click += new System.EventHandler(this.verifierCarte);
+            // 
+            // pb_15
+            // 
+            resources.ApplyResources(this.pb_15, "pb_15");
+            this.pb_15.Name = "pb_15";
+            this.pb_15.TabStop = false;
+            this.pb_15.Click += new System.EventHandler(this.verifierCarte);
+            // 
+            // pb_16
+            // 
+            resources.ApplyResources(this.pb_16, "pb_16");
+            this.pb_16.Name = "pb_16";
+            this.pb_16.TabStop = false;
+            this.pb_16.Click += new System.EventHandler(this.verifierCarte);
+            // 
+            // pb_10
+            // 
+            resources.ApplyResources(this.pb_10, "pb_10");
+            this.pb_10.Name = "pb_10";
+            this.pb_10.TabStop = false;
+            this.pb_10.Click += new System.EventHandler(this.verifierCarte);
+            // 
+            // pb_09
+            // 
+            resources.ApplyResources(this.pb_09, "pb_09");
+            this.pb_09.Name = "pb_09";
+            this.pb_09.TabStop = false;
+            this.pb_09.Click += new System.EventHandler(this.verifierCarte);
+            // 
+            // pb_11
+            // 
+            resources.ApplyResources(this.pb_11, "pb_11");
+            this.pb_11.Name = "pb_11";
+            this.pb_11.TabStop = false;
+            this.pb_11.Click += new System.EventHandler(this.verifierCarte);
+            // 
+            // pb_13
+            // 
+            resources.ApplyResources(this.pb_13, "pb_13");
+            this.pb_13.Name = "pb_13";
+            this.pb_13.TabStop = false;
+            this.pb_13.Click += new System.EventHandler(this.verifierCarte);
+            // 
+            // pb_12
+            // 
+            resources.ApplyResources(this.pb_12, "pb_12");
+            this.pb_12.Name = "pb_12";
+            this.pb_12.TabStop = false;
+            this.pb_12.Click += new System.EventHandler(this.verifierCarte);
             // 
             // pb_05
             // 
@@ -200,13 +278,6 @@ namespace Memory
             this.btn_retourner.UseVisualStyleBackColor = true;
             this.btn_retourner.Click += new System.EventHandler(this.boutonRetourner);
             // 
-            // pb_recherche
-            // 
-            resources.ApplyResources(this.pb_recherche, "pb_recherche");
-            this.pb_recherche.Name = "pb_recherche";
-            this.pb_recherche.TabStop = false;
-            this.pb_recherche.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // btn_jouer
             // 
             resources.ApplyResources(this.btn_jouer, "btn_jouer");
@@ -253,13 +324,20 @@ namespace Memory
             this.Controls.Add(this.label_règles1);
             this.Controls.Add(this.label_timer);
             this.Controls.Add(this.btn_jouer);
-            this.Controls.Add(this.pb_recherche);
             this.Controls.Add(this.btn_retourner);
             this.Controls.Add(this.btn_distribuer);
             this.Controls.Add(this.tlpTapisDeCartes);
             this.Name = "FMemoryGame";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tlpTapisDeCartes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_09)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_05)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_06)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_07)).EndInit();
@@ -268,7 +346,6 @@ namespace Memory
             ((System.ComponentModel.ISupportInitialize)(this.pb_02)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_04)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_recherche)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,7 +357,6 @@ namespace Memory
         private System.Windows.Forms.Button btn_distribuer;
         private System.Windows.Forms.ImageList ilSabotDeCartes;
         private System.Windows.Forms.Button btn_retourner;
-        private System.Windows.Forms.PictureBox pb_recherche;
         private System.Windows.Forms.Button btn_jouer;
         private System.Windows.Forms.Label label_timer;
         private System.Windows.Forms.Label label_règles1;
@@ -295,6 +371,14 @@ namespace Memory
         private System.Windows.Forms.PictureBox pb_02;
         private System.Windows.Forms.PictureBox pb_04;
         private System.Windows.Forms.PictureBox pb_03;
+        private System.Windows.Forms.PictureBox pb_14;
+        private System.Windows.Forms.PictureBox pb_15;
+        private System.Windows.Forms.PictureBox pb_16;
+        private System.Windows.Forms.PictureBox pb_10;
+        private System.Windows.Forms.PictureBox pb_09;
+        private System.Windows.Forms.PictureBox pb_11;
+        private System.Windows.Forms.PictureBox pb_13;
+        private System.Windows.Forms.PictureBox pb_12;
     }
 }
 
